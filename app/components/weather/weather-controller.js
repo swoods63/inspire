@@ -1,18 +1,3 @@
-// function WeatherController(){
-// 	var wc = this;
-// 	var weatherService = new WeatherService();
-	
-// 	weatherService.getWeather(function(weather){
-// 		console.log(weather);
-// 		//What can you do with this weather object?
-// 	})
-
-// }
-
-
-
-
-
 
 function WeatherController() {
     var weatherService = new WeatherService();
@@ -22,7 +7,6 @@ function WeatherController() {
 		draw(weather)
 		//What can you do with this weather object?
 	})
-    //What can you do with this weather object?
     function draw(weather) {
         var elem = document.getElementById('weather')
         var template = ''
@@ -32,7 +16,7 @@ function WeatherController() {
         var maxWeaF = weather.main.temp_max * 9 / 5 - 459.67
         template += `
             
-                    <h2>${weather['main']['temp']}</h2>
+                    <h2>${weaF}</h2>
         `
         return elem.innerHTML = template
     }

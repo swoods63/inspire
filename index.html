@@ -8,7 +8,7 @@
 
 <body id="body">
 	<div id="weather">
-		Your Weather Template
+		<p>Your Weather Template</p>
 	</div>
 
 	<div id="quote">
@@ -16,8 +16,17 @@
 	</div>
 
 	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
+		
+	
+
+		<form id="todoForm" onsubmit="app.controllers.toDoController.addTodoFromForm()">
+			<input id="task" />
+			<input type="submit" id="add" value="add" />
+		</form>
+		<!--A Todo List-->
+			<div id="todos" >
+			
+			</div>
 	</div>
 
 

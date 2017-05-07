@@ -2,11 +2,11 @@
 function WeatherController() {
     var weatherService = new WeatherService();
 
-	weatherService.getWeather(function(weather){
-		console.log(weather);
-		draw(weather)
-		//What can you do with this weather object?
-	})
+    weatherService.getWeather(function (weather) {
+        console.log(weather);
+        draw(weather)
+        //What can you do with this weather object?
+    })
     function draw(weather) {
         var elem = document.getElementById('weather')
         var template = ''
@@ -16,12 +16,13 @@ function WeatherController() {
         var maxWeaF = weather.main.temp_max * 9 / 5 - 459.67
         template += `
             
-                    <h2>${weaF}</h2>
+        <h2> ${weather.name}</h2>
+         <h2>${weaFNow}°<h2>
         `
         return elem.innerHTML = template
     }
     function failed() {
         var elem = document.getElementById('weather')
         elem.innerHTML = "SORRY YOUR REQUEST FAILED"
-    } 
+    }
 }

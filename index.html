@@ -4,34 +4,56 @@
 	<meta charset="UTF-8">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
 </head>
+<!--Time-->
+<body id="body2" onload="startTime()">
+	<div class="clock">
+		<script>
+			function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =
+					h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+				if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+				return i;
+			}
+		</script>
 
-<body id="body">
-	<div id="weather">
-		<p>Your Weather Template</p>
+	
+	</div>
+	<div id="txt"></div>
+
+	<!--The weather-->
+	<div id="weather" class="temp">
+		Your Weather Template
 	</div>
 
-	<div id="quote">
-		<p>The Quote</p>
 	</div>
 
-	<div id="todo">
-		
-	<p>The ToDo List</p>
+	<!--The Quotes -->
+	<div id="quote" class="quote1">
+		The Quote
+	</div>
 
-		<form id="todoForm" onsubmit="app.controllers.toDoController.addTodoFromForm()">
+	<!--A Todo List-->
+	<div id="todo" class= "list">
+		<h2>The ToDo List</h2>
+		<form id="todoForm" onsubmit="app.controllers.toDoController.addTodoFromForm(event)">
 			<input id="task" />
 			<input type="submit" id="add" value="add" />
 		</form>
-		<!--A Todo List-->
-			<div id="todos" >
-			
-			</div>
-	</div>
+		<div id="todos">
+		</div>
 
-
-
-
+		
 	<!--JS Libraries-->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<!--Services-->

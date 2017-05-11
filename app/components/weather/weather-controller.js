@@ -31,7 +31,7 @@ function WeatherController() {
         var maxWeaF = weather.main.temp_max * 9 / 5 - 459.67
         template += `
         <h2> ${weather.name}</h2>
-         <h2 id="temp" data-type="f">${weaFNow}˚ F<h2>
+         <h2 id="temp" data-type="f">${weaFNow} ˚ F<h2>
         `
         return elem.innerHTML = template
     }

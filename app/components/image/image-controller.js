@@ -4,6 +4,6 @@ function ImageController() {
     img.getImage(draw)
     function draw(image){
         console.log(image)
-        document.getElementById("body").style.backgroundImage = `url(${image.url})`
+        document.getElementById("body2").style.backgroundImage = `url(${image.url})`
     }
 }

@@ -6,7 +6,7 @@ function TodoController() {
 
 
     this.addTodoFromForm = function (event) {
-
+        event.preventDefault()
         var task = document.getElementById("task");
 
 
@@ -20,6 +20,7 @@ function TodoController() {
 
         // FINAL ACTION OF ADDING A TODO
         todoService.saveTodos(todosArry)
+        show()
     }
     function remove() {
         var id = this.getAttribute('id');

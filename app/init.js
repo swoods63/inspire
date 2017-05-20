@@ -4,5 +4,7 @@ var app = {
     toDoController: new TodoController(),
     quoteController: new QuoteController(),
     imageController: new ImageController(),
+    clockController: new ClockController()
   }
 }
+// app.controllers.clockController.startTime()

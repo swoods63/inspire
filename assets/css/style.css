@@ -1,7 +1,8 @@
 body{
-   background-repeat: repeat no-repeat;
+   background-repeat: repeat;
     width: 100%;
     height: auto;
+    font-family: 'Lobster Two', cursive;
 }
 #txt{
   text-align: center;
@@ -9,38 +10,32 @@ body{
   color: greenyellow;
 }
 .greeting{
+  color: yellow;
+  font-size: 60px;
+  position: absolute;
+    top: 400px;
+    right: 500px; 
+    border: 15px;;
 
 }
 
-h3 {
-  font-family: 'Lobster Two', cursive;
-  color:blue;
-   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: .8px;
-   -webkit-text-stroke-color: limegreen ;
-}
-
-h2 {
-  color: black;
-}
 .quote1 {
-  font-size: 15px;
+  color: lime;
+  font-size: 20px;
   align-content: left;
-  padding-top: 12cm; 
+  padding-top: 5px;
+  padding-left: 10px; 
 }
 
 .temp {
+  color: red;
+  font-size: 20px;
   position: absolute;
     top: 0px;
     right: 0; 
-    border: 
+    border: 15px;
   text-align: right;
   padding-right: 10%;
-  font-family: 'Lobster Two', cursive;
-  color: black;
-   -webkit-text-fill-color:red; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: .01px;
-   -webkit-text-stroke-color: black ; 
 }
 
 .list {
@@ -55,6 +50,3 @@ padding-right: 2%;
 padding-left: .2%;
 }
 
-.quote1{
-  text-align: top;
-}

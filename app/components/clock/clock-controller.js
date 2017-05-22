@@ -8,13 +8,12 @@ function ClockController() {
     var greeting = document.getElementById('greeting')
     if (h < 12) {
       greeting.innerHTML = "Good Morning"
-    }
-    else if (h > 12 && h < 17) {
-      greeting.innerHTML = "Good Afternoon"
-    } else if (h > 17) {
-      greeting.innerHTML = "Good Evening"
-    }
-
+        } 
+        else if (h > 12 && h < 17) {
+        greeting.innerHTML = "Good Afternoon"
+      } else if (h > 17) {
+        greeting.innerHTML = "Good Evening"
+      }
 
     m = checkTime(m);
     s = checkTime(s);

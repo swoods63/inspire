@@ -7,3 +7,9 @@ function ImageController() {
         document.getElementById("body2").style.backgroundImage = `url(${image.url})`
     }
 }
+
+// function draw(data) {
+//         var body = document.getElementById('body');
+//         $('#body').css('background-image', 'url(' + data.url + ')');
+//         $('#body').css('background-size', 'cover');
+//     }

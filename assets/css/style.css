@@ -13,9 +13,9 @@ body{
   color: yellow;
   font-size: 60px;
   position: absolute;
-    top: 400px;
-    right: 500px; 
-    border: 15px;;
+    top: 300px;
+    right: 550px; 
+    border: 5px;;
 
 }
 
@@ -23,7 +23,7 @@ body{
   color: lime;
   font-size: 20px;
   align-content: left;
-  padding-top: 5px;
+  padding-top: 25px;
   padding-left: 10px; 
 }
 
